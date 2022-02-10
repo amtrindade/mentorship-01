@@ -1,6 +1,6 @@
 package com.page;
 
-public class Browser {
+public abstract class Browser {
 	
 	private String name;
 	private String version;

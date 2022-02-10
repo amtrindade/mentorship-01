@@ -2,26 +2,46 @@ package com.test;
 
 import static org.junit.Assert.*;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import com.page.Browser;
+import com.page.ChromeBrowser;
+import com.page.FirefoxBrowser;
 
 
-public class BrowserTest {
-
+public class BrowserTest extends BaseTest{
+	
+	@Before
+	public void setUp() {
+		System.out.println("setUp test");
+	}
+	
+	@After
+	public void after() {
+		System.out.println("after test");
+	}
+	
 	@Test
-	public void testCriaBrowser() {
+	public void testCriaBrowser1() {
 		
-		Browser chrome = new Browser();
-		Browser firefox = new Browser();
+		Browser chrome = new ChromeBrowser();
+		Browser firefox = new FirefoxBrowser();
 		
-		chrome.setName("Google Chrome");
-		firefox.setName("FireFox");
-		
-		System.out.println(chrome.getName());
-		System.out.println(firefox.getName());
+		System.out.println("testCriaBrowser1");	
 		
 		assertEquals("Google Chrome", chrome.getName());
 		assertEquals("FireFox", firefox.getName());
 	}
+	
+	
+	@Test
+	public void testCriaBrowser2() {
+		System.out.println("testCriaBrowser2");
+		
+	}
+
+	
+	
 }
