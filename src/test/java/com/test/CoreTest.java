@@ -3,7 +3,7 @@ package com.test;
 import org.junit.After;
 import org.junit.Before;
 
-public abstract class BaseTest {
+public abstract class CoreTest {
 	
 	@Before
 	public void before() {

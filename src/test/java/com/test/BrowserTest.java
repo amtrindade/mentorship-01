@@ -11,7 +11,7 @@ import com.page.ChromeBrowser;
 import com.page.FirefoxBrowser;
 
 
-public class BrowserTest extends BaseTest{
+public class BrowserTest extends CoreTest{
 	
 	@Before
 	public void setUp() {
@@ -41,7 +41,4 @@ public class BrowserTest extends BaseTest{
 		System.out.println("testCriaBrowser2");
 		
 	}
-
-	
-	
 }
