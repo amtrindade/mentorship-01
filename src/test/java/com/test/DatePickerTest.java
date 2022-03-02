@@ -26,7 +26,6 @@ public class DatePickerTest extends BaseTest{
 	public void testSelectDayCurrent() throws InterruptedException {
 		dtPage.open();
 		dtPage.setDay();
-		
 	}
 
 }
