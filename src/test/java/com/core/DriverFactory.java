@@ -20,12 +20,12 @@ public class DriverFactory {
 			
 			if (browser.equals("chrome")) {
 		
-				System.setProperty("webdriver.chrome.driver", "/home/antonio/dev/drivers/chromedriver");				
+				System.setProperty("webdriver.chrome.driver", "/home/antonio/Dev/drivers/chromedriver");
 				driver = new ChromeDriver();
 			}
 			
 			if (browser.equals("chrome_headless")) {
-				System.setProperty("webdriver.chrome.driver", "/home/antonio/dev/drivers/chromedriver");
+				System.setProperty("webdriver.chrome.driver", "/home/antonio/Dev/drivers/chromedriver");
 				
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("headless");
@@ -35,16 +35,15 @@ public class DriverFactory {
 			}
 			
 			if (browser.equals("firefox")) {
-				System.setProperty("webdriver.gecko.driver", "/home/antonio/dev/drivers/geckodriver");				
+				System.setProperty("webdriver.gecko.driver", "/home/antonio/Dev/drivers/geckodriver");
 				driver = new FirefoxDriver();
 			}
 			
 			if (browser.equals("firefox_headless")) {
-				System.setProperty("webdriver.gecko.driver", "/home/antonio/dev/drivers/geckodriver");
+				System.setProperty("webdriver.gecko.driver", "/home/antonio/Dev/drivers/geckodriver");
 				
 				FirefoxOptions options = new FirefoxOptions();
 				options.addArguments("--headless");
-				//options.addArguments("--window-size").addArguments("370,527");
 				options.addArguments("--width=370");
 				options.addArguments("--height=527");
 				
