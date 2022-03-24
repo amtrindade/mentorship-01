@@ -20,16 +20,16 @@ public class DriverFactory {
 			
 			if (browser.equals("chrome")) {
 		
-				System.setProperty("webdriver.chrome.driver", "/home/antonio/Dev/drivers/chromedriver");
+				System.setProperty("webdriver.chrome.driver", "/home/antonio/dev/drivers/chromedriver");
 				driver = new ChromeDriver();
 			}
 			
 			if (browser.equals("chrome_headless")) {
-				System.setProperty("webdriver.chrome.driver", "/home/antonio/Dev/drivers/chromedriver");
+				System.setProperty("webdriver.chrome.driver", "/home/antonio/dev/drivers/chromedriver");
 				
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("headless");
-				options.addArguments("window-size=370x527");
+				options.addArguments("window-size=1366x960");
 				
 				driver = new ChromeDriver(options);
 			}

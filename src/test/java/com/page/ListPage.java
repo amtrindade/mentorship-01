@@ -12,7 +12,6 @@ public class ListPage {
 
 	public int getQtdProduct() {
 		List<WebElement> list =  getDriver().findElements(By.xpath("//*[@id='center_column']/ul/li"));
-		
 		return list.size();
 	}
 

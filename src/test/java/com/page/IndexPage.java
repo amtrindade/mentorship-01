@@ -22,4 +22,12 @@ public class IndexPage {
 			
 			return new ListPage();
 		}
+
+		public CategoryPage navigationCategory(String nameCategory) {
+			WebElement linkCategory = getDriver().findElement(By.linkText(nameCategory));
+			linkCategory.click();
+			
+			return new CategoryPage();
+			
+		}
 }
